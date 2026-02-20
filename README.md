@@ -94,7 +94,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 	<tbody>
 		<tr>
 			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
-			<td>W3C Editors Draft</td>
+			<td>W3C Group Note Draft</td>
 			<td>14 December 2025</td>
 		</tr>
 	</tbody>

@@ -26,7 +26,9 @@
 				.summary .reporting dd { flex-basis: calc(100% - 85px); margin: 0; }
 				.summary .reporting dd { flex-basis: calc(100% - 85px); } }
 			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
-			@media print { .pageButtons, .filter, body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
+			@media print {
+				.pageButtons, .filter, body { margin-left: 1.6em !important; padding-left: 1.6em !important; }
+				.switch { display: none; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
 			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
