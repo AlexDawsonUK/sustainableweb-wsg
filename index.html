@@ -1198,6 +1198,14 @@
 								<dt>GRI 303: Water</dt><dd>Medium</dd>
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
+							<p class="subtitle"><strong>Example</strong></p>
+							<pre class="nohighlight">
+								&lt;form>
+									&lt;label for="choose"&gt;Would you prefer a banana or cherry? (required)&lt;/label&gt;
+									&lt;input id="choose" name="i-like" required /&gt;
+									&lt;button>Submit&lt;/button&gt;
+								&lt;/form&gt;
+							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
 							<p>Accessibility, HTML, Privacy, Social Equity, UI, Usability</p>
 						</details>
@@ -1230,14 +1238,6 @@
 								<dt>GRI 303: Water</dt><dd>Medium</dd>
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
-							<p class="subtitle"><strong>Example</strong></p>
-							<pre class="nohighlight">
-								&lt;form>
-									&lt;label for="choose"&gt;Would you prefer a banana or cherry? (required)&lt;/label&gt;
-									&lt;input id="choose" name="i-like" required /&gt;
-									&lt;button>Submit&lt;/button&gt;
-								&lt;/form&gt;
-							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
 							<p>JavaScript, Privacy, UI, Usability</p>
 						</details>
@@ -1354,10 +1354,6 @@
 								<dt>GRI 303: Water</dt><dd>Medium</dd>
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
-							<p class="subtitle"><strong>Example</strong></p>
-							<pre class="nohighlight">
-								&lt;link rel="prefetch" href="/articles/" as="document"&gt;
-							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
 							<p>Accessibility, Compatibility, KPIs, Performance, Privacy, Reporting, Research, Security, Social Equity, Software, Strategy, UI, Usability</p>
 						</details>
@@ -1790,7 +1786,7 @@
 							</dl>
 							<p class="subtitle"><strong>Example</strong></p>
 							<pre class="nohighlight">
-								&lt;img src="image.png" loading="lazy" alt="…" width="200" height="200"&gt;
+								&lt;link rel="prefetch" href="/articles/" as="document"&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
 							<p>Accessibility, Assets, CSS, JavaScript, Performance</p>
@@ -2436,7 +2432,7 @@
 									&lt;IfModule mod_setenvif.c&gt;
 										&lt;IfModule mod_headers.c&gt;
 											SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
-											RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+											RequestHeader append Accept-Encoding "zstd, gzip, br, deflate" env=HAVE_Accept-Encoding
 										&lt;/IfModule&gt;
 									&lt;/IfModule&gt;
 									&lt;IfModule mod_filter.c&gt;
@@ -2774,10 +2770,6 @@
 								<dt>GRI 303: Water</dt><dd>Low</dd>
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
-							<p class="subtitle"><strong>Example</strong></p>
-							<pre class="nohighlight">
-								Accept-Encoding: zstd, gzip, br, deflate
-							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
 							<p>Accessibility, Content, E-Waste, Hardware, Performance, Privacy</p>
 						</details>
