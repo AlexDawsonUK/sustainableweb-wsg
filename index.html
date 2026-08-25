@@ -1528,7 +1528,7 @@
 				</section>
 				<section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="short" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-necessity">Success Criterion: Dependency necessity</h4>
-					<p>Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Maintain an inventory of dependencies, including their sources and versions, and review them regularly for security updates and vulnerabilities. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations without assessing the potential security, maintenance, and lifecycle impacts.</p>
+					<p>Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Maintain an inventory of dependencies, including their sources and versions, and review them regularly for security updates and vulnerabilities. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations unless the custom implementation offers equivalent security assurance and ongoing maintenance and support.</p>
 				</section>
 				<section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="short" data-standard="GPF, SDGs" data-considerations="Accessibility, Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-updates">Success Criterion: Dependency updates</h4>
@@ -1586,7 +1586,7 @@
 				</section>
 				<section class="notoc" data-people="medium" data-planet="medium" data-prosperity="medium" data-timeframe="medium" data-standard="AFNOR, GPF, GR491" data-considerations="Accessibility, Security" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="optimized-methodology">Success Criterion: Optimized methodology</h4>
-					<p>Use the most performant and sustainable approach for your use case. Coding from scratch can often reduce environmental impact by avoiding unnecessary tooling, dependencies, and build steps. Where a well-maintained existing solution is available, evaluate whether it provides better performance, maintenance, and sustainability outcomes than a custom implementation. Do not replace established and trusted security-sensitive components with custom implementations unless the security, maintenance, and lifecycle impacts have been assessed. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, security, and environmental impact of third-party solutions.</p>
+					<p>Coding from scratch can reduce environmental impact by avoiding unnecessary tooling, dependencies, and build steps. Where a well-maintained existing solution is available, evaluate whether it provides better performance, maintenance, and sustainability outcomes than a custom implementation. Do not replace established and trusted security-sensitive components with custom implementations unless the custom implementation offers equivalent security assurance and ongoing maintenance and support. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, security, and environmental impact of third-party solutions.</p>
 				</section>
 				<section class="notoc" data-people="medium" data-planet="medium" data-prosperity="medium" data-timeframe="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="Accessibility, Security" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="static-over-dynamic">Success Criterion: Static over dynamic</h4>
@@ -1620,7 +1620,7 @@
 				</section>
 				<section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="short" data-standard="" data-considerations="Security" data-categories="Compatibility, Performance">
 					<h4 id="language-choice">Success Criterion: Language choice</h4>
-					<p>Use the best programming language for the task, recognizing that many tools and languages are optimized for specific types of work. Adoption effort is justified where benefits outweigh costs and there is a reasonable user base, provided it does not impact the wellbeing of those involved or become cost-prohibitive.</p>
+					<p>Use the best programming language for the task, recognizing that many tools and languages are optimized for specific types of work. Adoption effort is justified where benefits outweigh costs and there is a reasonable user base, provided it does not impact the well-being of those involved or become cost-prohibitive.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -1739,11 +1739,11 @@
 				<p class="subheading">Use caching and offline capabilities to reduce network load, improve resilience, and balance performance with sustainability.</p>
 				<section class="notoc" data-people="medium" data-planet="medium" data-prosperity="low" data-timeframe="short" data-standard="Azure WAF, GPF, GR491" data-considerations="Security" data-categories="Assets, HTML, JavaScript, Networking, Performance, Software">
 					<h4 id="client-side-caching">Success Criterion: Client-side caching</h4>
-					<p>Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behavior using both initial and repeat visits to ensure expected resources are being reused and behaving as expected.</p>
+					<p>Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behaviour using both initial and repeat visits to ensure that resources are reused where intended without causing stale or inconsistent content or broken functionality. Ensure any content with authorization-based access restrictions does not remain accessible after logout or when the authorization state changes.</p>
 				</section>
 				<section class="notoc" data-people="medium" data-planet="medium" data-prosperity="low" data-timeframe="short" data-standard="Azure WAF, GPF, GR491" data-considerations="Security" data-categories="Assets, HTML, JavaScript, Networking, Performance, Software">
 					<h4 id="server-side-caching">Success Criterion: Server-side caching</h4>
-					<p>Use server-side caching to reduce processing time and resource use. Apply caching at necessary layers of the delivery stack, including application, server, and edge caching where applicable. Ensure cached content is invalidated and/or refreshed when the underlying content changes. Where cached copies depend on user authorization, ensure cached copies are accessible only to authorized users and only while the applicable authorization state permits access. Balance efficiency gains against added complexity, maintenance requirements, and resource use.</p>
+					<p>Use server-side caching to reduce processing time and resource use. Apply caching at delivery-stack layers where it provides a clear benefit, balancing performance gains against the overhead and complexity of maintaining cached content. Ensure cached content is invalidated and/or refreshed when the underlying content changes. Where cached copies depend on user authorization, ensure cached copies are accessible only to authorized users and only while the applicable authorization state permits access. Balance efficiency gains against added complexity, maintenance requirements, and resource use.</p>
 				</section>
 				<section class="notoc" data-people="medium" data-planet="medium" data-prosperity="low" data-timeframe="short" data-standard="GPF, GreenIT" data-considerations="Accessibility" data-categories="Assets, HTML, JavaScript, Networking, Performance, Software">
 					<h4 id="offline-access">Success Criterion: Offline access</h4>
@@ -1818,7 +1818,7 @@
 				<p class="subheading">Provide clear error handling and ensure broken links are either fixed or redirected to destinations to prevent navigation issues.</p>
 				<section class="notoc" data-people="medium" data-planet="low" data-prosperity="indeterminate" data-timeframe="short" data-standard="GR491" data-considerations="Accessibility, Security" data-categories="Compatibility, Content, Marketing, Networking, UI, Usability">
 					<h4 id="error-pages">Success Criterion: Error pages</h4>
-					<p>Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content. Provide enough information to support users without exposing sensitive information, internal system details, or security-sensitive details.</p>
+					<p>Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content. Provide only the information necessary to support users without exposing sensitive information, internal system details, or security-sensitive details.</p>
 				</section>
 				<section class="notoc" data-people="medium" data-planet="low" data-prosperity="indeterminate" data-timeframe="short" data-standard="GR491" data-considerations="Accessibility, Security" data-categories="Compatibility, Content, Marketing, Networking, UI, Usability">
 					<h4 id="redirection">Success Criterion: Redirection</h4>
@@ -1989,7 +1989,7 @@
 				<p class="subheading">Use demand-matched, autoscaling infrastructure to meet demand efficiently without overprovisioning.</p>
 				<section class="notoc" data-people="indeterminate" data-planet="high" data-prosperity="low" data-timeframe="short" data-standard="AWS WAF, GPF, SDGs" data-considerations="Security" data-categories="E-Waste, Hardware, Performance">
 					<h4 id="lowest-requirements">Success Criterion: Lowest requirements</h4>
-					<p>Select infrastructure that meets your requirements and customer agreements without unnecessary over-provisioning. Favor simpler infrastructure configurations over more complex or distributed setups when availability, recovery, and security requirements allow. Provision capacity based on expected demand while continuing to meet the availability, recovery, security, and resilience requirements of the service.</p>
+					<p>Select infrastructure that meets your requirements and customer agreements without unnecessary over-provisioning. Provision capacity based on expected demand, with allowances for exceptional and hostile demand, while simultaneously ensuring all availability, recovery, security, and resilience requirements can be met.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2396,7 +2396,7 @@
 				</section>
 				<section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="short" data-standard="GR491" data-considerations="Accessibility, Security" data-categories="E-Waste, Ideation, Reporting, Software">
 					<h4 id="obstacle-consideration">Success Criterion: Obstacle consideration</h4>
-					<p>Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers. Reducing friction or simplification of user journeys must not result in the removal or weakening of necessary security or safety measures, or the introduction or increase of security or safety risks, particularly in relation to user verification and authentication mechanisms.</p>
+					<p>Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers, without weakening necessary security, safety, or authentication measures.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2443,7 +2443,7 @@
 					<p>Publicly commit to paying employees, contractors, and other affected parties a living wage.</p>
 				</section>
 				<section class="notoc" data-people="high" data-planet="indeterminate" data-prosperity="high" data-timeframe="long" data-standard="SDGs" data-considerations="" data-categories="Governance, Social Equity">
-					<h4 id="incentivisation">Success Criterion: Incentivisation</h4>
+					<h4 id="incentivization">Success Criterion: Incentivization</h4>
 					<p>Embed incentives for affected parties such as workers and contractors into organizational practices to support impact goals, underpinned by clear policies that guide how incentives are designed and applied.</p>
 				</section>
 				<section class="notoc" data-people="high" data-planet="indeterminate" data-prosperity="high" data-timeframe="long" data-standard="SDGs" data-considerations="" data-categories="Governance, Social Equity">
@@ -2552,7 +2552,7 @@
 				</section>
 				<section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="long" data-standard="GPF, GR491" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="quantum-resilience">Success Criterion: Quantum resilience</h4>
-					<p>Adopt post-quantum encryption where there is a clear need to protect against "harvest now, decrypt later" attacks and long-term data confidentiality risks. Assess the need based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Plan transitions so that cryptographic mechanisms can be updated over time while maintaining compatibility and reducing unnecessary migration impacts.Balance protection needs against resource use, processing demands, and operational complexity while meeting applicable security requirements.</p>
+					<p>Assess the need for post-quantum cryptography based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum cryptography in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits. Balance these considerations against the security benefits of post-quantum cryptography.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2670,7 +2670,7 @@
 				</section>
 				<section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="long" data-standard="GPF, SDGs" data-considerations="Accessibility" data-categories="Ideation, KPIs, Performance, Research, Usability">
 					<h4 id="human-budget">Success Criterion: Human budget</h4>
-					<p>Define KPIs for engineering effort, development time, or sprints. Optimize workflows sustainably so work is done with care, while prioritizing worker health, wellbeing, and sustainable workloads.</p>
+					<p>Define KPIs for engineering effort, development time, or sprints. Optimize workflows sustainably so work is done with care, while prioritizing worker health, well-being, and sustainable workloads.</p>
 				</section>
 				<section class="notoc" data-people="indeterminate" data-planet="indeterminate" data-prosperity="indeterminate" data-timeframe="long" data-standard="GPF, SDGs" data-considerations="Accessibility" data-categories="Ideation, KPIs, Performance, Research, Usability">
 					<h4 id="measurable-improvements">Success Criterion: Measurable improvements</h4>
@@ -2763,8 +2763,8 @@
 			<p><strong>Note: </strong><a href="#greenwashing">Greenwashing</a> should be treated seriously as a consideration, as misrepresenting societal impacts can undermine digital inclusion, security, and privacy. Moreover, these risks and impacts may themselves be exploited as vectors for environmental or broader societal harm.</p>
 			<section> <!-- Accessibility -->
 				<h3>Accessibility</h3>
-				<p>Accessibility is an important consideration when applying web sustainability practices. Sustainable web products and services should reduce unnecessary resource use while ensuring that people can continue to access and use them effectively. Accessibility supports the long-term viability of digital products by enabling broader participation, reducing barriers to use, and supporting equitable access.</p>
-				<p>Implementers should avoid introducing accessibility barriers when applying sustainability improvements. Where reducing resource use, simplifying experiences, or changing technologies affects accessibility, solutions should preserve accessibility requirements and user needs.</p>
+				<p>Accessibility is an important consideration when applying web sustainability practices. Sustainable web products and services should reduce resource use while ensuring that people can continue to access and use them effectively. Accessibility supports the long-term viability of digital products by enabling broader participation, reducing barriers to use, and supporting equitable access.</p>
+				<p>Consider accessibility when applying sustainability improvements. Where reducing resource use, simplifying experiences, or changing technologies affects accessibility, assess the impact on accessibility requirements and user needs.  <a href="#conflicts">See conflicts.</a></p></p>
 				<p>Guidelines within this specification that <a href="https://www.w3.org/mission/accessibility/">may relate to accessibility</a> are:</p>
 				<ul>
 					<li>All those listed within <a href="#user-experience-design">User Experience Design</a></li>
@@ -2812,8 +2812,8 @@
 			</section>
 			<section> <!-- Privacy -->
 				<h3>Privacy</h3>
-				<p>Privacy is an important consideration when applying web sustainability practices. Sustainable web products and services should minimize unnecessary data collection, processing, storage, and transfer while respecting people's privacy rights and expectations. Privacy-preserving practices can reduce resource use while improving trust and supporting the long-term viability of digital products and services.</p>
-				<p>Implementers should avoid introducing unnecessary privacy risks when applying sustainability improvements. Where reducing resource use affects data practices, solutions should preserve necessary privacy protections and ensure that data is collected, used, stored, and retained only for valid purposes.</p>
+				<p>Privacy is an important consideration when applying web sustainability practices. Sustainable web products and services should minimize data collection, processing, storage, and transfer while respecting people's privacy rights and expectations. Privacy-preserving practices can reduce resource use while improving trust and supporting the long-term viability of digital products and services.</p>
+				<p>Consider privacy when applying sustainability improvements. Where reducing resource use, solutions should preserve necessary privacy protections and ensure that data is collected, used, stored, and retained only for valid purposes. <a href="#conflicts">See conflicts.</a></p></p>
 				<p>Guidelines within this specification that <a href="https://www.w3.org/mission/privacy/">may relate to privacy</a> are:</p>
 				<ul>
 					<li><strong>User Experience Design:</strong>
@@ -2853,8 +2853,8 @@
 			</section>
 			<section> <!-- Security -->
 				<h3>Security</h3>
-				<p>Security is an important consideration when applying web sustainability practices. Sustainable web design and development should reduce unnecessary resource use while maintaining necessary security, privacy, and user safety protections. Security measures may require additional resources, but these protections support the long-term reliability and trustworthiness of digital products and services.</p>
-				<p>Implementers should avoid introducing security risks when applying sustainability improvements. Where guidance in this specification creates a potential conflict with security requirements, solutions should be sought that meet both objectives while preserving necessary protections.</p>
+				<p>Security is an important consideration when applying web sustainability practices. Sustainable web design and development should reduce resource use while maintaining necessary security, privacy, and user safety protections. Security measures may require additional resources, but these protections support the long-term reliability and trustworthiness of digital products and services.</p>
+				<p>Consider security when applying sustainability improvements. Where guidance in this specification creates a potential conflict with security requirements, solutions should be sought that meet both objectives while preserving necessary protections, including authorization-dependent caching, capacity, and recovery requirements, as well as dependency security and lifecycle management. <a href="#conflicts">See conflicts.</a></p>
 				<p>Guidelines within this specification that <a href="https://www.w3.org/mission/security/">may relate to security</a> are:</p>
 				<ul>
 					<li><strong>User Experience Design:</strong>
