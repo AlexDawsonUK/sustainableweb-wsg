@@ -752,7 +752,7 @@
 					"criteria": [
 						{
 							"title": "Client-side caching",
-							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behaviour using both initial and repeat visits to ensure that resources are reused where intended without causing stale or inconsistent content or broken functionality. Ensure any content with authorization-based access restrictions does not remain accessible after logout or when the authorization state changes."
+							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behavior using both initial and repeat visits to ensure that resources are reused where intended without causing stale or inconsistent content or broken functionality. Ensure any content with authorization-based access restrictions does not remain accessible after logout or when the authorization state changes."
 						},
 						{
 							"title": "Server-side caching",
